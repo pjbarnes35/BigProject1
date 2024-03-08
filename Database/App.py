@@ -21,6 +21,12 @@ def choose_table():
     choice = input("Enter your choice (1-5): ")
     return choice
 
+# ANSI escape codes for colors
+class colors:
+    GREEN = '\033[92m'
+    RED = '\033[91m'
+    RESET = '\033[0m'
+
 # Main function to run the quiz bowl
 def quiz_bowl():
     choice = choose_table()
@@ -33,14 +39,16 @@ def quiz_bowl():
         
         for question in questions:
             print(question[1])
-            userAnswer = input("Answer: ")
-            if userAnswer.upper() == question[2]:
-                print("Correct!")
+            user_answer = input("Answer: ")
+            if user_answer.upper() == question[2]:
+                print(colors.GREEN + "Correct!")
             else:
-                print("Wrongo! The answer was", question[2])
+                print(colors.RED + f"Wrongo! The answer was {question[2]}")
+            print(colors.RESET)
     else:
-        print("Invalid choice! Please enter a number between 1 and 5.")
-    
+        print(colors.RED + "Invalid choice! Please enter a number between 1 and 5.")
+        print(colors.RESET)
+
     conn.close()
 
 # Run the quiz bowl
