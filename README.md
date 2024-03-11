@@ -1,12 +1,37 @@
-# BigProject1
-The First Big Project for the Class
+# Quiz Bowl Project
 
-# I want to write out a layout for the specific bits of code I have to do and that I have a plan I can follow.
+## Requirements
 
-1. Create a single file that stores all of our variables for our 5 different categories. Populate the dictionaries with questions.
-    - Make sure to label our Dictionaries as the class names.
+- Python
+- `sqlite3` library
+- `colorama` library (optional)
 
-2. Make the Quiz Bowl File
-    - Mae sure to allow them to choose.
+## How to Run
 
-3. Change the color of CORRECT/INCORRECT
+1. Clone the repository:
+
+
+2. Navigate to the project directory:
+
+
+3. Ensure you have the `QnA2.db` database file with questions and answers.
+
+4. Run the script:
+
+
+5. Follow on-screen instructions to choose a category and answer questions.
+
+## Database Schema
+
+- Tables for Finance, Advanced Business Analytics, Business Communications 2, Business Strategy, and Business Development Applications.
+- Each table has columns: `id`, `question`, and `answer`.
+
+## Contributing
+
+Open issues or submit pull requests for suggestions or improvements.
+
+Noted: Red=Wrong Green=Correct
+
+Populate= Where I input all the questions into their respective tables
+Create= Where I created the tables
+App= Where to Run the Quiz Bowl
