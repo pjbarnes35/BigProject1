@@ -32,6 +32,10 @@ Open issues or submit pull requests for suggestions or improvements.
 
 Noted: Red=Wrong Green=Correct
 
-Populate= Where I input all the questions into their respective tables
-Create= Where I created the tables
-App= Where to Run the Quiz Bowl
+## Create= Where I created the tables
+
+## Populate= Where I input all the questions into their respective tables
+
+## Read= Making sure all tables and questions are in the QnA Database
+
+## App= Where to Run the Quiz Bowl
